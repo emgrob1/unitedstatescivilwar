@@ -67,8 +67,8 @@
   <!-- End Jquery -->
 
   <!-- Map scripts - add the below to your page -->
-  <link href="usa/usa/lg-map/map.css" rel="stylesheet" type="text/css" />
-  <script src="usa/usa/lg-map/raphael.js" type="text/javascript"></script>
-  <script src="usa/usa/lg-map/scale.raphael.js" type="text/javascript"></script>
-  <script src="usa/usa/lg-map/lg-map.js" type="text/javascript"></script>
+  <link href="usa/lg-map/map.css" rel="stylesheet" type="text/css" />
+  <script src="usa/lg-map/raphael.js" type="text/javascript"></script>
+  <script src="usa/lg-map/scale.raphael.js" type="text/javascript"></script>
+  <script src="usa/lg-map/lg-map.js" type="text/javascript"></script>
   <!-- End Map scripts -->
