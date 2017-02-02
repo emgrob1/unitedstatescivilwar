@@ -3,12 +3,12 @@
 
 <html>
 <head>
-{{partial('partials/header')}}
+<?php echo $this->partial('partials/header'); ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-{{partial('partials/nav_menu')}}
+<?php echo $this->partial('partials/nav_menu'); ?>
   <div class="container">
 
     <!-- Map html - add the below to your page -->

@@ -1,5 +1,8 @@
 <?php
 
+use Phalcon\Mvc\View\Simple as SimpleView;
+use Phalcon\Mvc\Router as router;
+
 error_reporting(E_ALL);
 
 define('APP_PATH', realpath('..'));
@@ -21,6 +24,33 @@ try {
      */
     include APP_PATH . "/app/config/services.php";
 
+	/**
+	 * Render views
+	 */
+//	$di->set(
+//	"view",
+//	function () {
+//		$view = new SimpleView();
+//		$view->setViewsDir("../app/views/");
+//		return $view;
+//	},
+//	TRUE
+	
+//	);
+	
+	// create the router
+	$router = new router();
+	// Define a route
+	$router->add(
+	"/admin/:controller/a/:action/:params",
+	array(
+		"controller" => 1,
+		"action" => 2,
+		"params" => 3,
+	)
+	
+	);
+	
     /**
      * Handle the request
      */

@@ -8,7 +8,7 @@ return new \Phalcon\Config(array(
         'host'        => 'localhost',
         'username'    => 'root',
         'password'    => 'evan',
-        'dbname'      => 'unitedstatescivilwars',
+        'dbname'      => 'unitedstatescivilwar',
         'charset'     => 'utf8',
     ),
     'application' => array(
