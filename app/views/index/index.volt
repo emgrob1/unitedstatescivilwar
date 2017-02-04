@@ -4,7 +4,7 @@
 <html>
 <head>
 {{partial('partials/header')}}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" type="text/javascript"></script>
+  
 </head>
 
 <body>
@@ -12,7 +12,7 @@
   <div class="container">
 
     <!-- Map html - add the below to your page -->
-    <div class="lg-map-wrapper" data-map="usa/usa/lg-map/usa.js">
+    <div class="lg-map-wrapper" data-map="usa/lg-map/usa.js">
       <div id="lg-map"></div>
       <div class="lg-map-text"></div>
     </div>
@@ -22,7 +22,7 @@
 
 
 <div id="footer">
-Copyright © 2016 Evan Grob
+Copyright © 2017
 </div>
 
 
