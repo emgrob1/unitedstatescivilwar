@@ -9,6 +9,7 @@
 
 <body>
 {{partial('partials/nav_menu')}}
+<br/>
   <div class="container">
 
     <!-- Map html - add the below to your page -->
