@@ -1,29 +1,23 @@
 
 <html>
 <head>
+<div>
   <?php echo $this->partial('partials/nav_menu'); ?>
   
-  <br/>
+</div>
   
 </head>
 
 <body>
+<?php echo $this->tag->form(array('createTheater/save', 'method' => 'post')); ?>
+<div>
+    <label for="name">Name</label>
+    <?php echo $this->tag->textField(array('theater_name', 'size' => 32)); ?>
 
+    <label for="type">Region</label>
+   <?php echo $this->tag->textField(array('theater_region', 'size' => 32)); ?>
 
-
-<form action="createTheater/save" method="Post">
-<div class="table" style="float: left;
-margin-left: -461px; margin-top:36px;">
-
-<p>Theater Name:
-
-<input type="text" name="theater_name"></p>
-
-<p>Region:
-<input type="text" name="theater_region"></p>
-
-<input type="submit" value = "Save" >
+    <?php echo $this->tag->submitButton(array('Save')); ?>
 </div>
-</form>
-</body>
+<?php echo $this->tag->endForm(); ?>
 </html>

@@ -1,29 +1,23 @@
 
 <html>
 <head>
+<div>
   {{partial('partials/nav_menu')}}
   
-  <br/>
+</div>
   
 </head>
 
 <body>
+{{ form('createTheater/save', 'method': 'post') }}
+<div>
+    <label for="name">Name</label>
+    {{ text_field("theater_name", "size": 32) }}
 
+    <label for="type">Region</label>
+   {{ text_field("theater_region", "size": 32) }}
 
-
-<form action="createTheater/save" method="Post">
-<div class="table" style="float: left;
-margin-left: -461px; margin-top:36px;">
-
-<p>Theater Name:
-
-<input type="text" name="theater_name"></p>
-
-<p>Region:
-<input type="text" name="theater_region"></p>
-
-<input type="submit" value = "Save" >
+    {{ submit_button('Save') }}
 </div>
-</form>
-</body>
+{{ end_form() }}
 </html>
